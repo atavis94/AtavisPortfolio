@@ -4,7 +4,8 @@ export default function Home() {
     <main className="bg-zinc-900 items-center justify-center mt-20 flex flex-col">
       <div 
         className="justify-center rounded-full h-32 w-32 border flex bg-cover" 
-        style={{backgroundImage: 'url("URL_OF_YOUR_PORTRAIT")'}}></div>
+        style={{backgroundImage: 'url("URL_OF_YOUR_PORTRAIT")'}}>
+      </div>
       <p className="text-center text-white mt-5">
         Hi, I'm Aiden, and I love to build things on the intertubes.
         <br />
