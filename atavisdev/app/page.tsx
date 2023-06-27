@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       <div className="flex mt-32 justify-center gap-md-28 mb-27 w-full">
-        <Image src={unisaLogo} 	style={{objectFit: "contain"}} width={400} alt="UniSA STEM Logo" className="mx-10" onClick={() => router.push("https://github.com/your_github")}/>
+        <Image src={unisaLogo} 	style={{objectFit: "contain"}} width={400} alt="UniSA STEM Logo" className="mx-10"/>
         <div className="mx-10"> 
           <span className="text-xl font-bold">Bachelor of Information Technology (Software Development)</span>
           <hr/>
