@@ -21,3 +21,7 @@ body {
   background: rgb(9, 9, 11);
 }
 
+html {
+  overflow-y: scroll;
+}
+
