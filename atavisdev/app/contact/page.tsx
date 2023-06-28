@@ -2,7 +2,7 @@ export default function Contact(){
     return (
         <div className="flex flex-col justify-center items-center h-screen mx-4 mb-8">
             <div className="mt-26 text-center">
-                <h2 className="text-4xl text-white">Don't be shy!</h2>
+                <h2 className="text-4xl text-white">Don&apos;t be shy!</h2>
                 <p className="my-6">Business enquiries only!</p>
 
                 <span>You may address your correspondence to Ayden.</span>
