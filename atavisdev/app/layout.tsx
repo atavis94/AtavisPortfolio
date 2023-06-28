@@ -1,4 +1,3 @@
-'use client';
 import './globals.css'
 import { Inter } from 'next/font/google'
 import Image from 'next/image';
@@ -33,10 +32,10 @@ export default function RootLayout({
           <div className="inline-flex bg-transparent">
             <div className="p-2 px-10 fixed top-0 inset-x-0 justify-start flex gap-2 space-x-5 bg-transparent">
               <div className='pt-2' style={{ position: 'relative', zIndex: 10 }}>
-                <Image src={linkedinIcon} alt="Github" className='hover:cursor-pointer' width={30} height={30}  onClick={() => router.push("https://www.linkedin.com/in/aidan-forbes-085422b4/")}/>            
+                <Image src={linkedinIcon} alt="Github" className='hover:cursor-pointer' width={30} height={30} />            
               </div>
               <div className='pt-2' style={{ position: 'relative', zIndex: 10 }} >
-                <Image src={githubIcon} alt="Github" width={30} height={30} className='hover:cursor-pointer' onClick={() => router.push("https://github.com/atavis94")}/>
+                <Image src={githubIcon} alt="Github" width={30} height={30} className='hover:cursor-pointer'/>
               </div>  
               <div className="pt-4 px-10 fixed top-0 inset-x-0 right-0 justify-end flex gap-2 space-x-5">
               {
