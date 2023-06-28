@@ -23,8 +23,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const pathname = usePathname();
-  const router = useRouter()
+  // const pathname = usePathname();
+  //const router = useRouter()
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -38,11 +38,11 @@ export default function RootLayout({
                 <Image src={githubIcon} alt="Github" width={30} height={30} className='hover:cursor-pointer'/>
               </div>  
               <div className="pt-4 px-10 fixed top-0 inset-x-0 right-0 justify-end flex gap-2 space-x-5">
-              {
+              {/* {
                 pathname === '/contact'
                   ? <Link href="/">Home</Link>
                   : <Link href="/contact">Contact</Link>
-              }
+              } */}
             </div>           
             </div>
 

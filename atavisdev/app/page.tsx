@@ -1,4 +1,4 @@
-'use client';
+
 import Image  from "next/image";
 import unisaLogo from "../resources/unisa_stem_logo.png";
 import flindersLogo from "../resources/flinders2.png";
@@ -7,7 +7,7 @@ import Atavis from '../resources/atavis.png';
 import { useRouter } from 'next/navigation'
 
 export default function Home() {
-  const router = useRouter()
+ // const router = useRouter()
   return (
     <main className="bg-zinc-900 justify-center mt-10 flex flex-col  ">
       <div className="bg-zinc-950">
