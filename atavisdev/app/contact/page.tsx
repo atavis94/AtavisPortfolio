@@ -5,7 +5,7 @@ export default function Contact(){
                 <h2 className="text-4xl text-white">Don&apos;t be shy!</h2>
                 <p className="my-6">Business enquiries only!</p>
 
-                <span>You may address your correspondence to Ayden.</span>
+                <span>You may address your correspondence to Aiden.</span>
             </div>
             <div className="flex justify-center items-center h-screen">
                 <form className="w-full max-w-lg">

@@ -4,8 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import githubIcon from '../resources/github.png';
 import linkedinIcon from '../resources/linkedin128x2.png'
-import { usePathname } from 'next/navigation'
-import { useRouter } from 'next/navigation'
+import ToggleNav from './toggleNav';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -42,11 +41,7 @@ export default function RootLayout({
                 </Link>
               </div>  
               <div className="pt-4 px-10 fixed top-0 inset-x-0 right-0 justify-end flex gap-2 space-x-5">
-              {/* {
-                pathname === '/contact'
-                  ? <Link href="/">Home</Link>
-                  : <Link href="/contact">Contact</Link>
-              } */}
+                <ToggleNav />
             </div>           
             </div>
 
