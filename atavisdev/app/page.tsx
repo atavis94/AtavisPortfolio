@@ -16,7 +16,7 @@ export default function Home() {
         <p className="text-center text-white mt-5 text-xl mb-20">
           I love to build things on the intertubes.
           <br />
-          My passion is anything React, Next.js, and Tailwind CSS. I'm also great with anything .NET related.
+          My passion is anything React, Next.js, and Tailwind CSS. I&apos;m also great with anything .NET related.
           <br />
           As a solid team player, I make a great member of any team and I focus on the big picture of getting the job done.
         </p>
@@ -32,7 +32,7 @@ export default function Home() {
           <br />
           <span className="text-lg font-semibold">Achievements</span>
           <ul className="list-disc list-inside">
-            <li>Chancellor's Letter of Commendation 2020 (Top 5%)</li>
+            <li>Chancellor&apos;s Letter of Commendation 2020 (Top 5%)</li>
             <li>Merit Award for Outstanding Performance 2021</li>
             <li>Merit Award for Outstanding Performance 2022</li>
             <li>Received Golden Key International Honour Society Membership</li>
@@ -56,7 +56,7 @@ export default function Home() {
             <li>Psychology</li>
             <li>Assorted interest subjects in political science and bioscience.</li>
           </ul>
-          <p className="mt-5 max-w-xl">I've always had a good mind for management, people, and diplomacy, and this was to become my first foray into academia.</p>
+          <p className="mt-5 max-w-xl">I&apos;ve always had a good mind for management, people, and diplomacy, and this was to become my first foray into academia.</p>
         </div>
       </div>
 
