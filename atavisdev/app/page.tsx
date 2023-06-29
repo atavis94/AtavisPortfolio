@@ -7,7 +7,7 @@ import Atavis from '../resources/atavis.png';
 
 export default function Home() {
   return (
-    <main className="bg-zinc-900 justify-center mt-10 flex flex-col  ">
+    <main className="bg-zinc-900 justify-center mt-10 flex flex-col text-white ">
       <div className="bg-zinc-950">
       <div className="flex items-center justify-center ">
           <Image src={Atavis} alt="Atavis" width={200} height={200} className="rounded-full h-36 w-36 border-black shadow-lg bg-cover" />
