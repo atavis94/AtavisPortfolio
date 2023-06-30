@@ -24,7 +24,6 @@ export default function Home() {
 
       <div className="flex flex-col lg:py-28 items-center lg:flex-row lg:justify-center shadow-lg">
         <Image src={unisaLogo} style={{ objectFit: "contain" }} width={400} alt="UniSA STEM Logo" className="mt-20 mb-20 lg:order-0 lg:mx-10" />
-
         <div className="text-start px-4 lg:mr-10 sm:pb-12 pb-20">
           <span className="text-xl font-bold">Bachelor of Information Technology (Software Development)</span>
           <hr />
