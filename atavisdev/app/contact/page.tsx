@@ -17,13 +17,13 @@ export default function Contact(){
                         <label className="block uppercase tracking-wide  text-white text-xs font-bold mb-2" htmlFor="grid-first-name">
                         Name
                         </label>
-                        <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="John Doe" name="name" />
+                        <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="John Doe" name="Name" />
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="grid-last-name">
                         Email
                         </label>
-                        <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="email" name="email" placeholder="john.doe@gmail.com" />
+                        <input className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="Email" name="email" placeholder="john.doe@gmail.com" />
                     </div>
                     </div>
                     <div className="flex flex-wrap -mx-3 mb-6">
@@ -39,7 +39,7 @@ export default function Contact(){
                         <label className="block uppercase tracking-wide text-white text-xs font-bold mb-2" htmlFor="grid-password">
                         Message
                         </label>
-                        <textarea className=" no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" name="message" placeholder="Enter your message here..."></textarea>
+                        <textarea className=" no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message" name="Message" placeholder="Enter your message here..."></textarea>
                     </div>
                     </div>
                     <div className="md:flex md:items-center">
