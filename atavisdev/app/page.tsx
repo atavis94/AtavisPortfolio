@@ -20,7 +20,7 @@ export default function Home() {
           <br />
           As a solid team player, I make a great member of any team and I focus on the big picture of getting the job done.
           <br />
-          Throughout my academic and professional career I have demonstrated exceptional leadership skills, and am comfortable guiding others to achieve their goals.
+          Throughout my academic and professional career I have demonstrated exceptional leadership skills, and thrive on guiding others to achieve their goals.
         </p>
       </div>
 
