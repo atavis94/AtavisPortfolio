@@ -27,7 +27,7 @@ export default function Home() {
         <div className="text-start px-4 lg:mr-10 sm:pb-12 pb-20">
           <span className="text-xl font-bold">Bachelor of Information Technology (Software Development)</span>
           <hr />
-          <span className="text-lg font-semibold">GPA: 6.44</span>
+          <span className="text-lg font-semibold">GPA: 6.45</span>
           <br />
           <span className="text-lg font-semibold">Achievements</span>
           <ul className="list-disc list-inside">
