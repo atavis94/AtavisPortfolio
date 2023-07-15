@@ -19,6 +19,8 @@ export default function Home() {
           My passion is anything React, Next.js, and Tailwind CSS. I&apos;m also great with anything .NET related.
           <br />
           As a solid team player, I make a great member of any team and I focus on the big picture of getting the job done.
+          <br />
+          Throughout my academic and professional career I have demonstrated exceptional leadership skills, and am comfortable guiding others to achieve their goals.
         </p>
       </div>
 
