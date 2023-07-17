@@ -20,7 +20,7 @@ export default function Home() {
           <br />
           As a solid team player, I make a great member of any team and I focus on the big picture of getting the job done.
           <br />
-          Throughout my academic and professional career I have demonstrated exceptional leadership skills, and thrive on guiding others to achieve their goals.
+          I am an exceptional leader, and thrive on guiding others to achieve their goals.
         </p>
       </div>
 
@@ -49,7 +49,7 @@ export default function Home() {
         <div className="text-start px-4 lg:ml-10 mb-20">
           <span className="text-xl font-bold">Associate Degree of Arts</span>
           <hr />
-          <span className="text-lg font-semibold">GPA: XXX</span>
+          <span className="text-lg font-semibold">GPA: TBD</span>
           <br />
           <span className="text-lg font-semibold">Specialisations</span>
           <ul className="list-disc list-inside">
