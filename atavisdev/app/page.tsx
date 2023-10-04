@@ -7,14 +7,14 @@ import Atavis from '../resources/atavis.png';
 
 export default function Home() {
   return (
-    <main className="bg-zinc-900 justify-center mt-24 flex flex-col text-white">
+    <main className="bg-zinc-900 justify-center mt-24 flex flex-col text-white relative">
       <div className="bg-zinc-950 shadow-md">
         <div className="flex items-center justify-center">
           <Image src={Atavis} alt="Atavis" width={200} height={200} className="rounded-full h-36 w-36 border-black shadow-lg bg-cover" />
         </div>
 
         <p className="text-center text-white mt-5 text-xl mb-20">
-          I love to build things on the intertubes.
+          Hi, I'm Aiden. I love building things on the intertubes.
           <br />
           My passion is anything React, Next.js, and Tailwind CSS. I&apos;m also great with anything .NET related.
           <br />
@@ -22,9 +22,11 @@ export default function Home() {
           <br />
           I am an exceptional leader, and thrive on guiding others to achieve their goals.
         </p>
+        
       </div>
 
       <div className="flex flex-col lg:py-28 items-center lg:flex-row lg:justify-center shadow-lg">
+        
         <Image src={unisaLogo} style={{ objectFit: "contain" }} width={400} alt="UniSA STEM Logo" className="mt-20 mb-20 lg:order-0 lg:mx-10 sm:mx-20" />
         <div className="text-start px-4 lg:mr-10 sm:pb-12 pb-20">
           <span className="text-xl font-bold">Bachelor of Information Technology (Software Development)</span>
@@ -40,6 +42,7 @@ export default function Home() {
           </ul>
           <p className="mt-5 max-w-xl">Graduating in the first half of 2023, and starting as an experiment in 2020, this was where I discovered my passion for software engineering.</p>
         </div>
+        
       </div>
 
       <div className="flex flex-col items-center lg:flex-row lg:justify-center sm:flex-col-reverse bg-zinc-950">
