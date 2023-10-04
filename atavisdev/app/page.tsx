@@ -14,7 +14,7 @@ export default function Home() {
         </div>
 
         <p className="text-center text-white mt-5 text-xl mb-20">
-          Hi, I'm Aiden. I love building things on the intertubes.
+          Hi, I&apos;m Aiden. I love building things on the intertubes.
           <br />
           My passion is anything React, Next.js, and Tailwind CSS. I&apos;m also great with anything .NET related.
           <br />
