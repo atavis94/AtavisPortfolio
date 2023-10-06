@@ -24,27 +24,27 @@ export async function POST(
         try{
           await transporter.sendMail(mailData, function(error: Error, info: any) {
             if (error) {
-              return res.json();
+              return res;
               return NextResponse.json({ error: 'Error sending email', status: 504,});
             } else {
-              return res.json();
+              return res;
               return NextResponse.json({ info: 'Email sent successfully!', status: 200,})
             }});
         }
         catch(error){
-          return res.json();
+          return res;
           return NextResponse.json({ error: 'Error sending email', status: 501,})
         }
       }
       else{
 
-        return res.json();
+        return res;
         return NextResponse.json({ error: 'Failed to verify transporter.', status: 502,})
       }
 
     } catch (error) {
       console.error(error);
-      return res.json();
+      return res;
       return NextResponse.json({ error: 'Error sending email', status: 503,})
     }
   }
