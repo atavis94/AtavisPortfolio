@@ -33,11 +33,11 @@ export async function POST(
             }});
         }
         catch(error){
-          return NextResponse.json({ error: 'Error sending email', status: 500,})
+          return NextResponse.json({ error: 'Error sending email', status: 501,})
         }
       }
       else{
-        return NextResponse.json({ error: 'Failed to verify transporter.', status: 500,})
+        return NextResponse.json({ error: 'Failed to verify transporter.', status: 502,})
       }
 
     } catch (error) {
