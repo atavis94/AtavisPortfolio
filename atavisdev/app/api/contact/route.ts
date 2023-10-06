@@ -22,7 +22,14 @@ export async function POST(
       // Send the email
       if(transporter.verify()){
         try{
-          await transporter.sendMail(mailData);
+          await transporter.sendMail(mailData, function(error: Error, info: any) {
+            if (error) {
+              console.error(error);
+              return NextResponse.json({ error: 'Error sending email', status: 500,});
+            } else {
+              console.log(info);
+              return NextResponse.json({ info: 'Email sent successfully!', status: 200,})
+            }});
         }
         catch(error){
 
