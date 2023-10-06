@@ -1,4 +1,3 @@
-import type { NextApiRequest, NextApiResponse } from 'next';
 import transporter from '../../../utils/transporter';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -6,7 +5,7 @@ export async function POST(
   req: NextRequest,
   res: NextResponse
 ) {
-  console.log('called');
+
   if (req.method === 'POST') {
     try {
       const body = await req.json();

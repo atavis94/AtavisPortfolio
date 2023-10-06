@@ -17,6 +17,7 @@ export default function Contact() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    console.log('Calling API with', formData);
     // Send form data to the API route.
     const response = await fetch('/api/contact', {
       method: 'POST',
@@ -25,6 +26,7 @@ export default function Contact() {
       },
       body: JSON.stringify(formData),
     });
+    console.log(response);
 
     // Handle the response, show a confirmation message, or handle errors
   };
