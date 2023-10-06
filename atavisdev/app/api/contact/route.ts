@@ -1,15 +1,17 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 import transporter from '../../../utils/transporter';
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(
-  req: NextApiRequest,
-  res: NextApiResponse
+  req: NextRequest,
+  res: NextResponse
 ) {
   console.log('called');
   if (req.method === 'POST') {
     try {
-      const { name, email, subject, message } = req.body;
+      const body = await req.json();
+
+      const { name, email, subject, message } = body;
 
       // Create email data
       const mailData = {
