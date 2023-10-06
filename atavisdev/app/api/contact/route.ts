@@ -2,8 +2,7 @@ import transporter from '../../../utils/transporter';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(
-  req: NextRequest,
-  res: NextResponse
+  req: NextRequest
 ) {
 
   if (req.method === 'POST') {
@@ -38,15 +37,12 @@ export async function POST(
 
       return NextResponse.json({ message: 'Email sent successfully!', status: 200,})
 
-      //res.status(200).json({ message: 'Email sent successfully!' });
     } catch (error) {
       console.error(error);
 
       return NextResponse.json({ error: 'Error sending email', status: 500,})
-      //res.status(500).json({ error: 'Error sending email' });
     }
   } else {
     return NextResponse.json({ error: 'Method not allowed', status: 405,})
-    //res.status(405).end();
   }
 }

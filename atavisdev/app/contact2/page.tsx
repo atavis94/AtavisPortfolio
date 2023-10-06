@@ -26,6 +26,7 @@ export default function Contact() {
       },
       body: JSON.stringify(formData),
     });
+    
     console.log(response);
 
     // Handle the response, show a confirmation message, or handle errors
