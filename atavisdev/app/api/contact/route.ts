@@ -5,8 +5,6 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(
   req: NextRequest
 ) {
-
-  if (req.method === 'POST') {
     try {
       const body = await req.json();
 
@@ -45,7 +43,4 @@ export async function POST(
 
       return NextResponse.json({ error: 'Error sending email', status: 503,})
     }
-  } else {
-    return NextResponse.json({ error: 'Method not allowed', status: 405,})
   }
-}
