@@ -23,15 +23,16 @@ export async function POST(
           reject(err);
         } else {
           resolve(info);
+          return Response.json({ info })
+
         }
       });
     });
 
-    return Response.json({ message: 'Message sent.' })
 
   } catch (err) {
     console.error(err);
-    return Response.json({ message: 'Not sent.' })
+    return Response.json({ err })
 
   }
 }
