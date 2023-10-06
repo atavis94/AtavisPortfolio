@@ -2,6 +2,11 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 
 export default function Contact() {
+    const [sent, setSent] = useState(false);
+    const [failed, setFailed] = useState(false);
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+
     const [formData, setFormData] = useState({
       name: '',
       email: '',
@@ -16,7 +21,8 @@ export default function Contact() {
   
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-  
+      setIsSubmitting(true);
+      
       console.log('Calling API with', formData);
       // Send form data to the API route.
       try {
@@ -30,23 +36,28 @@ export default function Contact() {
   
         if (response.ok) {
           const data = await response.json();
-          console.log(data); // Log the response data
+          setSent(true);
         } else {
           console.error('Error:', response.status, response.statusText);
+          setFailed(true);
         }
       } catch (error) {
         console.error('Fetch error:', error);
-      }
-    
+        setFailed(true);
+      }   
+      setIsSubmitting(false);
   };
+
     return (
-        <div className="flex flex-col justify-center items-center h-screen mx-4 mb-8 mt-20">
+        <div className="flex flex-col justify-center items-center mx-4 mb-8 mt-20">
+          {!sent && !failed ? (
+            <>        
             <div className="text-center">
                 <h2 className="text-4xl text-white">Don&apos;t be shy!</h2>
                 <p className="my-6">Business enquiries only!</p>
                 <span>You may address your correspondence to Aiden.</span>
             </div>
-            <div className="flex justify-center items-center h-screen">
+            <div className="flex justify-center items-center mt-6 pt-8">
                 <form
                 className="w-full max-w-lg"
                 onSubmit={handleSubmit}
@@ -132,14 +143,30 @@ export default function Contact() {
                     <div className="md:w-1/3">
                         <button
                         className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                        type="submit">
+                        type="submit"
+                        disabled={isSubmitting}>
                         Send
                         </button>
                     </div>
-                    <div className="md:w-2/3"></div>
+                    
                 </div>
                 </form>
-            </div>   
+            </div> 
+            </>
+            ) : (
+              <div className="flex flex-col justify-center items-center">
+                {sent && (
+                <div className="text-center">
+                  <h2 className="text-4xl text-white mb-4">Message Sent!</h2>
+                  <span>I&apos;ll be in touch shortly.</span>
+                </div> )}
+                {failed && (
+                <div className="text-center">
+                  <h2 className="text-4xl text-white mb-4">Something went wrong...</h2>
+                  <span>Refresh the page and try again, or contact me via LinkedIn.</span>
+                </div> )}
+              </div>
+            )}  
         </div> 
     )
 }
