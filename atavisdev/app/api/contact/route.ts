@@ -1,3 +1,4 @@
+
 import transporter from '../../../utils/transporter';
 import { NextRequest, NextResponse } from 'next/server';
 
@@ -24,25 +25,20 @@ export async function POST(
         try{
           await transporter.sendMail(mailData, function(error: Error, info: any) {
             if (error) {
-              console.error(error);
+         
               return NextResponse.json({ error: 'Error sending email', status: 500,});
             } else {
-              console.log(info);
+           
               return NextResponse.json({ info: 'Email sent successfully!', status: 200,})
             }});
         }
         catch(error){
-
           return NextResponse.json({ error: 'Error sending email', status: 500,})
         }
       }
       else{
         return NextResponse.json({ error: 'Failed to verify transporter.', status: 500,})
       }
-
-
-
-      return NextResponse.json({ message: 'Email sent successfully!', status: 200,})
 
     } catch (error) {
       console.error(error);
