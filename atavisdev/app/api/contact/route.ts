@@ -15,19 +15,19 @@ export async function POST(req: Request) {
       subject: subject,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
-
-    return await transporter
-      .sendMail(mailData)
-      .then((response: nodemailer.SentMessageInfo) => {
-        return NextResponse.json(
-          { error: false, emailSent: true, errors: [], response },
-          { status: 200 }
-        );
-      })
-      .catch((error: nodemailer.SentMessageInfo) => {
-        return NextResponse.json(
-          { error: true, emailSent: false, errors: [error] },
-          { status: 500 }
-        );
-    });
+    return NextResponse.json("Hello World");
+    // return await transporter
+    //   .sendMail(mailData)
+    //   .then((response: nodemailer.SentMessageInfo) => {
+    //     return NextResponse.json(
+    //       { error: false, emailSent: true, errors: [], response },
+    //       { status: 200 }
+    //     );
+    //   })
+    //   .catch((error: nodemailer.SentMessageInfo) => {
+    //     return NextResponse.json(
+    //       { error: true, emailSent: false, errors: [error] },
+    //       { status: 500 }
+    //     );
+    // });
 }

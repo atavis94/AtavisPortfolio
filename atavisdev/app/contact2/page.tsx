@@ -38,8 +38,6 @@ export default function Contact() {
         console.error('Fetch error:', error);
       }
     
-
-    // Handle the response, show a confirmation message, or handle errors
   };
     return (
         <div className="flex flex-col justify-center items-center h-screen mx-4 mb-8 mt-20">
