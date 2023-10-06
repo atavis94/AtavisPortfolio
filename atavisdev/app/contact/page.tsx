@@ -158,19 +158,18 @@ export default function Contact() {
             ) : (
               <div className="flex flex-col justify-center items-center">
                 {sent && (
-                <div>
-                  <div className="text-center">
-                    <h2 className="text-4xl text-white mb-4">Message Sent!</h2>
-                    <span>I&apos;ll be in touch shortly.</span>
-                  </div>
-                  <div className="text-center mt-4">
-                  <button className="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 mt-4 rounded"
-                  onClick={() => router.push('/')}>
-                  Home
-                </button>
-                  </div>
-                </div> 
-                )}
+                  <div>
+                    <div className="text-center">
+                      <h2 className="text-4xl text-white mb-4">Message Sent!</h2>
+                      <span>I&apos;ll be in touch shortly.</span>
+                    </div>
+                    <div className="text-center mt-4"> 
+                      <button className="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 mt-4 rounded"
+                        onClick={() => router.push('/')}>
+                        Refresh
+                      </button>
+                    </div>
+                </div> )}
                 {failed && (
                   <div>
                     <div className="text-center">
