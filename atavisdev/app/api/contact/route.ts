@@ -26,7 +26,7 @@ export async function POST(
           await transporter.sendMail(mailData, function(error: Error, info: any) {
             if (error) {
          
-              return NextResponse.json({ error: 'Error sending email', status: 500,});
+              return NextResponse.json({ error: 'Error sending email', status: 504,});
             } else {
            
               return NextResponse.json({ info: 'Email sent successfully!', status: 200,})
@@ -43,7 +43,7 @@ export async function POST(
     } catch (error) {
       console.error(error);
 
-      return NextResponse.json({ error: 'Error sending email', status: 500,})
+      return NextResponse.json({ error: 'Error sending email', status: 503,})
     }
   } else {
     return NextResponse.json({ error: 'Method not allowed', status: 405,})
