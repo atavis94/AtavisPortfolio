@@ -3,8 +3,7 @@ import transporter from '../../../utils/transporter';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(
-  req: NextRequest,
-  res: NextApiResponse
+  req: NextRequest
 ) {
   try {
     const body = await req.json();
@@ -18,27 +17,21 @@ export async function POST(
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
 
-    // Verify transporter
-    if (transporter.verify()) {
-      try {
-        await transporter.sendMail(mailData, function (error: Error, info: any) {
-          if (error) {
-            console.error(error);
-            return res.status(504).json({ error: 'Error sending email' });
-          } else {
-            console.log(info);
-            return res.status(200).json({ info: 'Email sent successfully!' });
-          }
-        });
-      } catch (error) {
-        console.error(error);
-        return res.status(501).json({ error: 'Error sending email' });
-      }
-    } else {
-      return res.status(502).json({ error: 'Failed to verify transporter.' });
-    }
-  } catch (error) {
-    console.error(error);
-    return res.status(503).json({ error: 'Error sending email' });
+    await new Promise((resolve, reject) => {
+      transporter.sendMail(mailData, (err: Error, info: any) => {
+        if (err) {
+          reject(err);
+        } else {
+          resolve(info);
+        }
+      });
+    });
+
+    return Response.json({ message: 'Message sent.' })
+
+  } catch (err) {
+    console.error(err);
+    return Response.json({ message: 'Not sent.' })
+
   }
 }
