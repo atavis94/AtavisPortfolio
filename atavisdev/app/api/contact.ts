@@ -1,4 +1,4 @@
-import transporter from '../../../utils/transporter';
+import transporter from '../../utils/transporter';
 import { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(
