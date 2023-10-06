@@ -24,21 +24,21 @@ export async function POST(
         await transporter.sendMail(mailData, function (error: Error, info: any) {
           if (error) {
             console.error(error);
-            res.status(504).json({ error: 'Error sending email' });
+            return res.status(504).json({ error: 'Error sending email' });
           } else {
             console.log(info);
-            res.status(200).json({ info: 'Email sent successfully!' });
+            return res.status(200).json({ info: 'Email sent successfully!' });
           }
         });
       } catch (error) {
         console.error(error);
-        res.status(501).json({ error: 'Error sending email' });
+        return res.status(501).json({ error: 'Error sending email' });
       }
     } else {
-      res.status(502).json({ error: 'Failed to verify transporter.' });
+      return res.status(502).json({ error: 'Failed to verify transporter.' });
     }
   } catch (error) {
     console.error(error);
-    res.status(503).json({ error: 'Error sending email' });
+    return res.status(503).json({ error: 'Error sending email' });
   }
 }
