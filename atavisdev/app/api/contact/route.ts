@@ -1,38 +1,38 @@
-import { NextApiRequest, NextApiResponse } from 'next';
 import transporter from '../../../utils/transporter';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextApiRequest, NextApiResponse } from 'next';
 
-export async function POST(
-  req: NextRequest
+export default async function handler(
+  req: NextApiRequest,
+  res: NextApiResponse
 ) {
   try {
-    const body = await req.json();
-    const { name, email, subject, message } = body;
+    if (req.method === 'POST') {
+ 
+      const { name, email, subject, message } = req.body;
 
-    // Create email data
-    const mailData = {
-      from: process.env.SITE_ACC,
-      to: process.env.DESTINATION_ADD,
-      subject: subject,
-      text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
-    };
+      // Create email data
+      const mailData = {
+        from: process.env.SITE_ACC,
+        to: process.env.DESTINATION_ADD,
+        subject: subject,
+        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+      };
 
-    await new Promise((resolve, reject) => {
-      transporter.sendMail(mailData, (err: Error, info: any) => {
-        if (err) {
-          reject(err);
-        } else {
-          resolve(info);
-          return Response.json({ info })
-
-        }
+      await new Promise((resolve, reject) => {
+        transporter.sendMail(mailData, (err: Error, info: any) => {
+          if (err) {
+            reject(err);
+          } else {
+            resolve(info);
+            res.json({ info }); // Send JSON response using res.json
+          }
+        });
       });
-    });
-
-
+    } else {
+      res.status(405).json({ error: 'Method not allowed' });
+    }
   } catch (err) {
     console.error(err);
-    return Response.json({ err })
-
+    res.status(503).json({ error: 'Error sending email' });
   }
 }
