@@ -21,7 +21,20 @@ export async function POST(
       };
 
       // Send the email
-      await transporter.sendMail(mailData);
+      if(transporter.verify()){
+        try{
+          await transporter.sendMail(mailData);
+        }
+        catch(error){
+
+          return NextResponse.json({ error: 'Error sending email', status: 500,})
+        }
+      }
+      else{
+        return NextResponse.json({ error: 'Failed to verify transporter.', status: 500,})
+      }
+
+
 
       return NextResponse.json({ message: 'Email sent successfully!', status: 200,})
 
