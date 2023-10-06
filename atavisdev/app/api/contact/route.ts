@@ -15,7 +15,7 @@ export async function POST(req: Request) {
       subject: subject,
       text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     };
-    return NextResponse.json("Hello World");
+    return NextResponse.json(mailData);
     // return await transporter
     //   .sendMail(mailData)
     //   .then((response: nodemailer.SentMessageInfo) => {
