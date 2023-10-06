@@ -166,7 +166,7 @@ export default function Contact() {
                     <div className="text-center mt-4"> 
                       <button className="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 mt-4 rounded"
                         onClick={() => router.push('/')}>
-                        Refresh
+                        Home
                       </button>
                     </div>
                 </div> )}
