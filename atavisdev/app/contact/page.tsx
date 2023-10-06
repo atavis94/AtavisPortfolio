@@ -1,7 +1,9 @@
 'use client';
 import { useState, ChangeEvent, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function Contact() {
+    const router = useRouter();
     const [sent, setSent] = useState(false);
     const [failed, setFailed] = useState(false);
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -156,14 +158,31 @@ export default function Contact() {
             ) : (
               <div className="flex flex-col justify-center items-center">
                 {sent && (
-                <div className="text-center">
-                  <h2 className="text-4xl text-white mb-4">Message Sent!</h2>
-                  <span>I&apos;ll be in touch shortly.</span>
-                </div> )}
+                <div>
+                  <div className="text-center">
+                    <h2 className="text-4xl text-white mb-4">Message Sent!</h2>
+                    <span>I&apos;ll be in touch shortly.</span>
+                  </div>
+                  <div className="text-center mt-4">
+                  <button className="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 mt-4 rounded"
+                  onClick={() => router.push('/')}>
+                  Home
+                </button>
+                  </div>
+                </div> 
+                )}
                 {failed && (
-                <div className="text-center">
-                  <h2 className="text-4xl text-white mb-4">Something went wrong...</h2>
-                  <span>Refresh the page and try again, or contact me via LinkedIn.</span>
+                  <div>
+                    <div className="text-center">
+                      <h2 className="text-4xl text-white mb-4">Something went wrong...</h2>
+                      <span>Refresh the page and try again, or contact me via LinkedIn.</span>
+                    </div>
+                    <div className="text-center mt-4"> 
+                      <button className="bg-purple-500 hover:bg-purple-400 text-white font-bold py-2 px-4 mt-4 rounded"
+                        onClick={() => window.location.reload()}>
+                        Refresh
+                      </button>
+                    </div>
                 </div> )}
               </div>
             )}  
