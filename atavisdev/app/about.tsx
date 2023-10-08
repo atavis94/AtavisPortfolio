@@ -29,7 +29,7 @@ export default function About(){
             <div className="mb-4">
               <h2 className="text-2xl font-semibold sm:text-center ">Key Skills</h2>
             </div>
-            <div className="flex flex-wrap max-w-lg">
+            <div className="flex flex-wrap max-w-lg justify-center">
               <span className="tag my-1 font-bold border-black border-2">React</span>
               <span className="tag my-1 font-bold border-black border-2">Next.JS</span>
               <span className="tag my-1 font-bold border-black border-2">.NET</span>
@@ -43,7 +43,7 @@ export default function About(){
             <div className="mt-14">
               <h2 className="text-2xl font-semibold sm:text-center mb-2">Developer Tools</h2>
             </div>
-            <div className="flex flex-wrap max-w-lg">
+            <div className="flex flex-wrap max-w-lg justify-center">
               <span className="tag my-1 font-bold border-black border-2">VS Code</span>
               <span className="tag my-1 font-bold border-black border-2">Visual Studio</span>
               <span className="tag my-1 font-bold border-black border-2">XCode</span>
