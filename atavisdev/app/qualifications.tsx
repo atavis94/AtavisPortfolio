@@ -5,7 +5,7 @@ import Image  from "next/image";
 export default function Qualifications(){
     return(
 
-        <div className=" bg-zinc-950 bg-alt lg:py-28 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
+        <div className="bg-zinc-950 bg-alt md:py-28 py-28 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
             <h1 className="text-center subpixel-antialiased text-white text-4xl font-extrabold sm:mx-5 lg:mt-0 mt-20 mb-5">Qualifications</h1>
             <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
           

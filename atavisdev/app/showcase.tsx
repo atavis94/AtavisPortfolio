@@ -19,7 +19,7 @@ export default function Showcase(){
 
   };
     return(
-        <div className="bg-zinc-950 text-white py-20 text-center" id="PurpleBarContainer">   
+        <div className="bg-zinc-950 text-white py-28 text-center" id="PurpleBarContainer">   
         <Modal
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
