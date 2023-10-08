@@ -16,7 +16,7 @@ export default function About(){
                 I also enjoy the challenge of solving back-end problems that support a rich and engaging front-end.                            
               </p>
               <p className="mb-6">
-                I've always been somewhat of a diplomat, which makes me a solid team player. I thrive on guiding others to work together and achieve a common goal.
+                I&apos;ve always been somewhat of a diplomat, which makes me a solid team player. I thrive on guiding others to work together and achieve a common goal.
               </p>
               <p className="mb-6">
                 In my spare time I like to watch Youtube videos about programming and web development, which helps me stay up to date with the latest trends and technologies.
