@@ -1,14 +1,10 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Image from 'next/image';
-import Link from 'next/link';
-import githubIcon from '../resources/github.png';
-import linkedinIcon from '../resources/linkedin128x2.png'
-import ToggleNav from './toggleNav';
+import { Source_Sans_3 } from 'next/font/google';
 import NavContainer from './navContainer';
 
 const inter = Inter({ subsets: ['latin'] })
-
+const sourceSans = Source_Sans_3({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Atavis Development',
@@ -25,7 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <body className={`${inter.className} w-full text-white`}>
+    <body className={`${sourceSans.className} body-svg w-full text-white`}>
 
         <NavContainer />
         {children}
