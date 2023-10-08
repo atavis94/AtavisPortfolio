@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Atavis from "/resources/Atavis.png";
+import Atavis from "/resources/atavis.png";
 
 export default function Banner(){
     return(
