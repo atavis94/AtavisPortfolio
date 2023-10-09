@@ -49,16 +49,16 @@ export default function ContactForm() {
     return (
 
         <div className="text-center lg:py-28 lg:flex-row justify-center" id="PurpleBarContainer">
-        
-        <h1 className="text-4xl mt-28 md:mt-0 font-extrabold mb-4">CONTACT</h1>
+        <h1 className="text-4xl mt-28 md:mt-0 font-extrabold mb-4">CONTACT</h1> 
         <div className="purple-bar border-black border-1 mt-4position-absolute"></div>
-            <>        
+        <div className='mx-2'> 
+
             <div className="text-center mt-16">
                 <h2 className="text-3xl text-white">Looking to get in touch?</h2>
             </div>
             <div className="flex justify-center items-center mt-6 pt-8">
                 <form
-                className="w-full max-w-lg md:mb-10 mb-28"
+                className=" max-w-lg md:mb-10 mb-28"
                 onSubmit={handleSubmit}
                 >
                 <div className="flex flex-wrap -mx-3 mb-6">
@@ -136,7 +136,7 @@ export default function ContactForm() {
                 {failed ? <h1 className='text-2xl font-extrabold'>Hmm, something went wrong. Please contact me via LinkedIn.</h1> : null}
                 </form>
             </div> 
-            </>
+          </div>
             
             
         </div> 
