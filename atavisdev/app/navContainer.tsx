@@ -12,17 +12,20 @@ export default function NavContainer() {
     const [visible, setVisible] = useState(true);
   
     const handleScroll = () => {
-        // find current scroll position
-        const currentScrollPos = window.scrollY;
+      
+      const currentScrollPos = window.scrollY;
+  
+      // Check if the screen width is less than 768px
+      if (window.innerWidth < 768) {
+        setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+      } else {
+        // If the screen width is larger than or equal to 768px, always show the navbar
+        setVisible(true);
+      }
+  
+      setPrevScrollPos(currentScrollPos);
+    };
     
-        // set state based on location info (explained in more detail below)
-        setVisible((prevScrollPos > currentScrollPos)  || currentScrollPos < 10);
-    
-        // set state to new scroll position
-        setPrevScrollPos(currentScrollPos);
-      };
-    
-      // new useEffect:
       useEffect(() => {
         window.addEventListener('scroll', handleScroll);
     
