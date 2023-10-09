@@ -50,7 +50,6 @@ export default function About(){
               <span className="tag my-1 font-bold border-black border-2">Eclipse</span>
               <span className="tag my-1 font-bold border-black border-2">Bash</span>
               <span className="tag my-1 font-bold border-black border-2">PowerShell</span>
-              <span className="tag my-1 font-bold border-black border-2">XCode</span>
 
             </div>
           </div>
