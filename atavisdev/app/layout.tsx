@@ -21,7 +21,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <body className={`${sourceSans.className} body-svg w-full text-white`}>
+    <body className={`${sourceSans.className} body-svg-wires w-full text-white`}>
 
         <NavContainer />
         {children}

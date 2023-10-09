@@ -8,7 +8,7 @@ import Showcase from "./showcase";
 
 export default function Home() {
   return (
-    <main className="bg-zinc-900 body-svg justify-center mt-24 flex flex-col text-white font-semibold">
+    <main className="justify-center mt-24 flex flex-col text-white font-semibold">
      
 
      <Banner />
