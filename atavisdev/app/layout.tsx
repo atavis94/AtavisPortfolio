@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Source_Sans_3 } from 'next/font/google';
-import NavContainer from './navContainer';
+import NavContainer from './navigation';
 
 const inter = Inter({ subsets: ['latin'] })
 const sourceSans = Source_Sans_3({ subsets: ['latin'] })

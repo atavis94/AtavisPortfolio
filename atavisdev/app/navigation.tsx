@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import githubIcon from '../resources/github.png';
 import linkedinIcon from '../resources/linkedin128x2.png';
-import NavLinks from './navLinks';
 import { useEffect, useState, useRef } from 'react';
+
 
 
 export default function NavContainer() {
@@ -90,7 +90,10 @@ export default function NavContainer() {
           </button>
         </div>
         <div className="hidden visible pt-3 md:px-10 p-4 fixed inset-x-0 right-0 justify-end md:flex md:gap-2 space-x-5">
-            <NavLinks />
+          <Link className="underscore text-sm md:text-lg" href="#about">ABOUT</Link>        
+          <Link className="underscore text-sm md:text-lg" href="#qualifications">QUALIFICATIONS</Link>
+          <Link className="underscore text-sm md:text-lg" href="#showcase">SHOWCASE</Link>
+          <Link className="underscore text-sm md:text-lg" href="#contact">CONTACT</Link>
         </div>  
     </nav>
     <nav className={`fixed left-0 h-full w-64 bg-zinc-950 text-white p-4 transform top-[65px] ${
