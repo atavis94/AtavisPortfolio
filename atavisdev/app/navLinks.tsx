@@ -24,10 +24,10 @@ export default function NavLinks() {
     
     return (
       <>
-          <Link className="underscore" href="#about">ABOUT</Link>        
-          <Link className="underscore" href="#qualifications">QUALIFICATIONS</Link>
-          <Link className="underscore" href="#showcase">SHOWCASE</Link>
-          <Link className="underscore" href="#contact">CONTACT</Link>
+          <Link className="underscore text-sm md:text-lg" href="#about">ABOUT</Link>        
+          <Link className="underscore text-sm md:text-lg" href="#qualifications">QUALIFICATIONS</Link>
+          <Link className="underscore text-sm md:text-lg" href="#showcase">SHOWCASE</Link>
+          <Link className="underscore text-sm md:text-lg" href="#contact">CONTACT</Link>
       </>
     );
   }

@@ -41,7 +41,7 @@ export default function Qualifications(){
             <div className="flex flex-col sm:flex-row mt-18 items-center md:items-start justify-center mb-18 md:mb-0">
                 <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">
                     <div>
-                    <Image src={flindersLogo} style={{ objectFit: "contain" }} width={300} alt="UniSA STEM Logo" className="mb-20 lg:order-0 lg:mx-10 sm:mx-20" />
+                    <Image src={flindersLogo} style={{ objectFit: "contain" }} width={300} alt="UniSA STEM Logo" className="mb-8 lg:order-0 lg:mx-10 sm:mx-20" />
 
                     </div>
                 </div>         
