@@ -46,6 +46,7 @@ export default function About(){
             <div className="flex flex-wrap max-w-lg justify-center">
               <span className="tag my-1 font-bold border-black border-2">VS Code</span>
               <span className="tag my-1 font-bold border-black border-2">Visual Studio</span>
+              <span className="tag my-1 font-bold border-black border-2">Git</span>
               <span className="tag my-1 font-bold border-black border-2">XCode</span>
               <span className="tag my-1 font-bold border-black border-2">Eclipse</span>
               <span className="tag my-1 font-bold border-black border-2">Bash</span>

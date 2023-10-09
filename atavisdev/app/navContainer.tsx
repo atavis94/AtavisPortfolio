@@ -24,7 +24,6 @@ export default function NavContainer() {
 
   
     const handleScroll = () => {
-
       const currentScrollPos = window.scrollY;
 
       // Check if the screen width is less than 768px
@@ -53,18 +52,15 @@ export default function NavContainer() {
             mobileMenuRef.current &&
             !mobileMenuRef.current.contains(event.target as Node)
           ) {
-            // Click occurred outside of the mobile menu, so close it
             closeMobileMenu();
           }
         };
     
         if (isMobileMenuOpen) {
-          // Add a click event listener when the mobile menu is open
           document.addEventListener('click', handleClickOutside);
         }
     
         return () => {
-          // Remove the click event listener when the component unmounts
           document.removeEventListener('click', handleClickOutside);
         };
       }, [isMobileMenuOpen]);
