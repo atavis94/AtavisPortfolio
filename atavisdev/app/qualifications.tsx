@@ -5,8 +5,8 @@ import Image  from "next/image";
 export default function Qualifications(){
     return(
 
-        <div className="bg-zinc-950 bg-alt md:py-28 py-28 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
-            <h1 className="text-center subpixel-antialiased text-white text-4xl font-extrabold sm:mx-5 lg:mt-0 mt-20 mb-5">Qualifications</h1>
+        <div className="bg-zinc-950 bg-alt md:py-28 py-20 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
+            <h1 className="text-4xl text-center font-extrabold mb-4">Qualifications</h1>
             <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
           
       
@@ -33,12 +33,12 @@ export default function Qualifications(){
                 </div>
             </div>
 
-            <div className="flex justify-center items-center mt-4 mb-16">
+            <div className="flex justify-center items-center mt-4 mb-10">
             <hr className="w-3/4 md:w-2/3  text-center border border-zinc-700" />
             </div>
 
 
-            <div className="flex flex-col sm:flex-row mt-18 items-center md:items-start justify-center mb-28 md:mb-0">
+            <div className="flex flex-col sm:flex-row mt-18 items-center md:items-start justify-center mb-18 md:mb-0">
                 <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">
                     <div>
                     <Image src={flindersLogo} style={{ objectFit: "contain" }} width={300} alt="UniSA STEM Logo" className="mb-20 lg:order-0 lg:mx-10 sm:mx-20" />
