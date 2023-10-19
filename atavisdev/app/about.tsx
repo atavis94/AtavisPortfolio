@@ -32,6 +32,7 @@ export default function About(){
             <div className="flex flex-wrap max-w-lg justify-center">
               <span className="tag my-1 font-bold border-black border-2">React</span>
               <span className="tag my-1 font-bold border-black border-2">Next.JS</span>
+              <span className="tag my-1 font-bold border-black border-2">Node.JS</span>
               <span className="tag my-1 font-bold border-black border-2">.NET</span>
               <span className="tag my-1 font-bold border-black border-2">TypeScript</span>
               <span className="tag my-1 font-bold border-black border-2">JavaScript</span>
@@ -39,8 +40,8 @@ export default function About(){
               <span className="tag my-1 font-bold border-black border-2">CSS</span>
               <span className="tag my-1 font-bold border-black border-2">C#</span>
               <span className="tag my-1 font-bold border-black border-2">C++</span>
-              <span className="tag my-1 font-bold border-black border-2">SQL</span>
-              <span className="tag my-1 font-bold border-black border-2">Node.JS</span>
+              <span className="tag my-1 font-bold border-black border-2">SQL</span>            
+              <span className="tag my-1 font-bold border-black border-2">MongoDB</span>
             </div>
             <div className="mt-14">
               <h2 className="text-2xl font-semibold sm:text-center mb-2">Developer Tools</h2>
