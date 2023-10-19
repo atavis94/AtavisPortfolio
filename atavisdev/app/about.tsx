@@ -39,6 +39,8 @@ export default function About(){
               <span className="tag my-1 font-bold border-black border-2">CSS</span>
               <span className="tag my-1 font-bold border-black border-2">C#</span>
               <span className="tag my-1 font-bold border-black border-2">C++</span>
+              <span className="tag my-1 font-bold border-black border-2">SQL</span>
+              <span className="tag my-1 font-bold border-black border-2">Node.JS</span>
             </div>
             <div className="mt-14">
               <h2 className="text-2xl font-semibold sm:text-center mb-2">Developer Tools</h2>
