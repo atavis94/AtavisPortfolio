@@ -35,7 +35,7 @@ export default function About(){
             <div className="flex flex-wrap max-w-lg justify-center">
               {skills.map((skill) =>
               (
-                <span className="tag my-1 font-bold border-black border-2">{skill}</span>
+                <span key={skill} className="tag my-1 font-bold border-black border-2">{skill}</span>
               )
               )}
             </div>
@@ -45,7 +45,7 @@ export default function About(){
             <div className="flex flex-wrap max-w-lg justify-center">
               {tools.map((tool) => 
               (
-                <span className="tag my-1 font-bold border-black border-2">{tool}</span>
+                <span key={tool} className="tag my-1 font-bold border-black border-2">{tool}</span>
               )  
               )}
             </div>
