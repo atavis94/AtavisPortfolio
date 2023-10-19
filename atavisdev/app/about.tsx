@@ -1,7 +1,7 @@
 
 export default function About(){
     const skills = [ "React", "Next.js", "Node.js", ".NET", "TypeScript", "JavaScript", "HTML", "CSS", "C#", "C++", "SQL", "MongoDB"];
-    const tools = ["VS Code", "Visual Studio", "Git", "XCode", "Eclipse", "Bash", "PowerShell"];
+    const tools = ["VS Code", "Visual Studio", "Git", "XCode", "Eclipse", "Jira"];
 
     return(
 
