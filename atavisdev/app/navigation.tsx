@@ -72,7 +72,7 @@ export default function NavContainer() {
         flex gap-2 space-x-5 bg-zinc-950 z-50`}>
 
         <div className="pt-2" style={{ position: 'relative', zIndex: 10 }}>
-          <Link href="https://www.linkedin.com/in/aidan-f-085422b4/">
+          <Link href="https://www.linkedin.com/in/aidan-f">
               <Image src={linkedinIcon} alt="Github" className="hover:cursor-pointer" width={30} height={30} />
           </Link>
         </div>
