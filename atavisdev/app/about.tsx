@@ -1,5 +1,8 @@
 
 export default function About(){
+    const skills = [ "React", "Next.js", "Node.js", ".NET", "TypeScript", "JavaScript", "HTML", "CSS", "C#", "C++", "SQL", "MongoDB"];
+    const tools = ["VS Code", "Visual Studio", "Git", "XCode", "Eclipse", "Bash", "PowerShell"];
+
     return(
 
         <div className="bg-zinc-950 text-white py-20 text-center" id="PurpleBarContainer">       
@@ -30,31 +33,21 @@ export default function About(){
               <h2 className="text-2xl font-semibold sm:text-center ">Key Skills</h2>
             </div>
             <div className="flex flex-wrap max-w-lg justify-center">
-              <span className="tag my-1 font-bold border-black border-2">React</span>
-              <span className="tag my-1 font-bold border-black border-2">Next.JS</span>
-              <span className="tag my-1 font-bold border-black border-2">Node.JS</span>
-              <span className="tag my-1 font-bold border-black border-2">.NET</span>
-              <span className="tag my-1 font-bold border-black border-2">TypeScript</span>
-              <span className="tag my-1 font-bold border-black border-2">JavaScript</span>
-              <span className="tag my-1 font-bold border-black border-2">HTML</span>
-              <span className="tag my-1 font-bold border-black border-2">CSS</span>
-              <span className="tag my-1 font-bold border-black border-2">C#</span>
-              <span className="tag my-1 font-bold border-black border-2">C++</span>
-              <span className="tag my-1 font-bold border-black border-2">SQL</span>            
-              <span className="tag my-1 font-bold border-black border-2">MongoDB</span>
+              {skills.map((skill) =>
+              (
+                <span className="tag my-1 font-bold border-black border-2">{skill}</span>
+              )
+              )}
             </div>
             <div className="mt-14">
               <h2 className="text-2xl font-semibold sm:text-center mb-2">Developer Tools</h2>
             </div>
             <div className="flex flex-wrap max-w-lg justify-center">
-              <span className="tag my-1 font-bold border-black border-2">VS Code</span>
-              <span className="tag my-1 font-bold border-black border-2">Visual Studio</span>
-              <span className="tag my-1 font-bold border-black border-2">Git</span>
-              <span className="tag my-1 font-bold border-black border-2">XCode</span>
-              <span className="tag my-1 font-bold border-black border-2">Eclipse</span>
-              <span className="tag my-1 font-bold border-black border-2">Bash</span>
-              <span className="tag my-1 font-bold border-black border-2">PowerShell</span>
-
+              {tools.map((tool) => 
+              (
+                <span className="tag my-1 font-bold border-black border-2">{tool}</span>
+              )  
+              )}
             </div>
           </div>
         </div>
