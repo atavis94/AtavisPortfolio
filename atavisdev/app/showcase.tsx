@@ -14,6 +14,7 @@ export default function Showcase(){
       setSelectedImage(image);
       setModalIsOpen(true);
     };
+
   const closeModal = () => {
   setModalIsOpen(false);
 
@@ -27,7 +28,8 @@ export default function Showcase(){
             className="Modal"
             overlayClassName="Overlay"
             >
-            <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" />
+            
+            <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={closeModal}/>
         </Modal>
     
         <h1 className="text-4xl font-extrabold mb-4">SHOWCASE</h1>
