@@ -15,21 +15,17 @@ export default function Showcase(){
       setModalIsOpen(true);
     };
 
-  const closeModal = () => {
-  setModalIsOpen(false);
-
-  };
     return(
         <div className="bg-zinc-950 text-white py-28 text-center" id="PurpleBarContainer">   
         <Modal
             isOpen={modalIsOpen}
-            onRequestClose={closeModal}
+            onRequestClose={() => setModalIsOpen(false)}
             contentLabel="Full-size Image Modal"
             className="Modal"
             overlayClassName="Overlay"
             >
             
-            <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={closeModal}/>
+            <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={() => setModalIsOpen(false)}/>
         </Modal>
     
         <h1 className="text-4xl font-extrabold mb-4">SHOWCASE</h1>
