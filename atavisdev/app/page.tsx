@@ -1,5 +1,3 @@
-
-
 import ContactForm from "./contactForm";
 import About from "./about";
 import Qualifications from "./qualifications";
