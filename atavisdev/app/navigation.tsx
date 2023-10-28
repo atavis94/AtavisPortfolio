@@ -18,10 +18,6 @@ export default function NavContainer() {
       setMobileMenuOpen(!isMobileMenuOpen); 
     };
 
-    const closeMobileMenu = () => {
-      setMobileMenuOpen(false);
-    };
-
   
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
@@ -37,34 +33,34 @@ export default function NavContainer() {
       setPrevScrollPos(currentScrollPos);
     };
     
-      // Handle displaying the navbar on scroll.
-      useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-    
-        return () => window.removeEventListener('scroll', handleScroll);
-    
-      }, [prevScrollPos, visible, handleScroll]);
+    // Handle displaying the navbar on scroll.
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => window.removeEventListener('scroll', handleScroll);
+  
+    }, [prevScrollPos, visible, handleScroll]);
 
-      // CLose the mobile menu when the user clicks outside of it.
-      useEffect(() => {
-        const handleClickOutside = (event: MouseEvent) => {
-          if (
-            mobileMenuRef.current &&
-            !mobileMenuRef.current.contains(event.target as Node)
-          ) {
-            closeMobileMenu();
-          }
-        };
-    
-        if (isMobileMenuOpen) {
-          document.addEventListener('click', handleClickOutside);
+    // CLose the mobile menu when the user clicks outside of it.
+    useEffect(() => {
+      const handleClickOutside = (event: MouseEvent) => {
+        if (
+          mobileMenuRef.current &&
+          !mobileMenuRef.current.contains(event.target as Node)
+        ) {
+          toggleMobileMenu();
         }
-    
-        return () => {
-          document.removeEventListener('click', handleClickOutside);
-        };
-      }, [isMobileMenuOpen]);
-    
+      };
+  
+      if (isMobileMenuOpen) {
+        document.addEventListener('click', handleClickOutside);
+      }
+  
+      return () => {
+        document.removeEventListener('click', handleClickOutside);
+      };
+    }, [isMobileMenuOpen]);
+  
   return (
   <>
     <nav className={`${visible || isMobileMenuOpen ? 'opacity-100' : 'opacity-0' }
@@ -103,7 +99,7 @@ export default function NavContainer() {
         <li>
           <Link
             href="#about"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={closeMobileMenu}
+            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
             ABOUT
           </Link>
@@ -111,7 +107,7 @@ export default function NavContainer() {
         <li>
           <Link
             href="#qualifications"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={closeMobileMenu}
+            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
             QUALIFICATIONS
           </Link>
@@ -119,7 +115,7 @@ export default function NavContainer() {
         <li>
           <Link
             href="#showcase"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={closeMobileMenu}
+            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
             SHOWCASE
           </Link>
@@ -127,7 +123,7 @@ export default function NavContainer() {
         <li>
           <Link
             href="#contact"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={closeMobileMenu}
+            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
             CONTACT
           </Link>

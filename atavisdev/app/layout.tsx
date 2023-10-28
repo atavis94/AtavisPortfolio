@@ -1,10 +1,12 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Source_Sans_3 } from 'next/font/google';
+import { Noto_Sans_Display } from 'next/font/google';
 import NavContainer from './navigation';
 
 const inter = Inter({ subsets: ['latin'] })
 const sourceSans = Source_Sans_3({ subsets: ['latin'] })
+const notoSans = Noto_Sans_Display({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Atavis Development',
@@ -21,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-    <body className={`${inter.className} body-svg-wires-light w-full text-white`}>
+    <body className={`${notoSans.className} body-svg-wires-light w-full text-white`}>
 
         <NavContainer />
         {children}
