@@ -86,46 +86,46 @@ export default function NavContainer() {
           </button>
         </div>
         <div className="hidden visible pt-3 md:px-10 p-4 fixed inset-x-0 right-0 justify-end md:flex md:gap-2 space-x-5">
-          <Link className="underscore text-sm md:text-lg" href="#about">ABOUT</Link>        
-          <Link className="underscore text-sm md:text-lg" href="#qualifications">QUALIFICATIONS</Link>
-          <Link className="underscore text-sm md:text-lg" href="#showcase">SHOWCASE</Link>
-          <Link className="underscore text-sm md:text-lg" href="#contact">CONTACT</Link>
+          <Link className="underscore text-lg" href="/#about">About</Link>        
+          <Link className="underscore text-lg" href="/#qualifications">Qualifications</Link>
+          <Link className="underscore text-lg" href="/#showcase">Showcase</Link>
+          <Link className="underscore text-lg" href="/#contact">Contact</Link>
         </div>  
     </nav>
-    <nav className={`fixed left-0 h-full w-64 bg-zinc-950 text-white p-4 transform top-[65px] ${
+    <nav className={`fixed left-0 h-full w-80 bg-zinc-950 text-white p-4 transform top-[65px] ${
             isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           } transition-transform duration-300 ease-in-out z-50 `} ref={mobileMenuRef}>
       <ul className="space-y-4">
         <li>
           <Link
-            href="#about"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
+            href="/#about"
+            className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            ABOUT
+            About
           </Link>
         </li>
         <li>
           <Link
-            href="#qualifications"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
+            href="/#qualifications"
+            className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            QUALIFICATIONS
+            Qualifications
           </Link>
         </li>
         <li>
           <Link
-            href="#showcase"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
+            href="/#showcase"
+            className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            SHOWCASE
+            Showcase
           </Link>
         </li>
         <li>
           <Link
-            href="#contact"
-            className="block text-sm md:text-lg underscore hover:text-purple-500" onClick={toggleMobileMenu}
+            href="/#contact"
+            className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            CONTACT
+            Contact
           </Link>
         </li>
       </ul>
