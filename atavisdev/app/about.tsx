@@ -1,7 +1,4 @@
 'use client';
-import { faDownload } from '@fortawesome/free-solid-svg-icons'; // Replace "IconName" with the actual icon name
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 
 export default function About(){
     const skills = [ "React", "Next.js", "Node.js", ".NET", "TypeScript", "JavaScript", "HTML", "CSS", "C#", "C++", "SQL", "MongoDB"];
@@ -59,17 +56,6 @@ export default function About(){
               )}
             </div>
           </div>
-        </div>
-        <div className="flex justify-center items-center mt-8">
-          <a href="/AidanResume.pdf" download>
-                  <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
-                      <span className="flex items-center gap-2">         
-                        <FontAwesomeIcon icon={faDownload} className='h-6'/>
-                        Download Resume
-                      </span> 
-        
-                  </button>
-            </a>         
         </div>
       </div>
     )

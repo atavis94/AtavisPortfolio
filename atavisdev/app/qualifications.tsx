@@ -1,6 +1,9 @@
 import unisaLogo from "../resources/unisa_stem_logo.png";
 import flindersLogo from "../resources/flinders2.png";
 import Image  from "next/image";
+import { faDownload } from '@fortawesome/free-solid-svg-icons'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 
 export default function Qualifications(){
     return(
@@ -8,7 +11,16 @@ export default function Qualifications(){
         <div className="bg-zinc-950 bg-alt md:py-28 py-20 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
             <h1 className="text-4xl text-center font-extrabold mb-4">Qualifications</h1>
             <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
-          
+            <div className="flex justify-center items-center mt-16">
+                <a href="/AidanResume.pdf" download>
+                    <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+                        <span className="flex items-center gap-2">         
+                        <FontAwesomeIcon icon={faDownload} className='h-6'/>
+                        Download Resume
+                        </span> 
+                    </button>
+                </a>         
+            </div>
       
             <div className="flex flex-col sm:flex-row mt-32 items-center md:items-start justify-center">
                 <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">
