@@ -9,7 +9,7 @@ export default function Qualifications(){
     return(
 
         <div className="bg-zinc-950 bg-alt md:py-28 py-20 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
-            <h1 className="text-4xl text-center font-extrabold mb-4">Qualifications</h1>
+            <h1 className="text-4xl text-center font-extrabold mb-4">QUALIFICATIONS</h1>
             <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
             <div className="flex justify-center items-center mt-16">
                 <a href="/AidanResume.pdf" download>
