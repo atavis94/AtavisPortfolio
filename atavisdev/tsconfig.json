@@ -19,8 +19,10 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "react-awesome-slider-fc": ["node_modules/react-awesome-slider-fc"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

@@ -13,13 +13,12 @@ export default function Showcase(){
   return(
       <div className="bg-zinc-950 text-white py-28 text-center" id="PurpleBarContainer">   
       <Modal
-          isOpen={modalIsOpen}
-          onRequestClose={() => setModalIsOpen(false)}
-          contentLabel="Full-size Image Modal"
-          className="Modal"
-          overlayClassName="Overlay"
-          >
-          
+            isOpen={modalIsOpen}
+            onRequestClose={() => setModalIsOpen(false)}
+            contentLabel="Full-size Image Modal"
+            className="Modal"
+            overlayClassName="Overlay"
+            >         
           <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={() => setModalIsOpen(false)}/>
       </Modal>
   
@@ -47,7 +46,7 @@ export default function Showcase(){
           setModalIsOpen(true)}}/>
         </div>
       </div>
-      <button className="bg-purple-800 border-black border-2 rounded-xl py-1 px-4" disabled>See More (WIP - Coming Soon)</button>
+      <a href="/projects/ceih" className="bg-purple-800 border-black border-2 hover:bg-purple-500 rounded-xl py-1 px-4">View Details</a>
       
     </div>
   )

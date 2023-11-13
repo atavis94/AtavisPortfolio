@@ -50,7 +50,7 @@ export default function ContactForm() {
 
         <div className="text-center lg:py-28 lg:flex-row justify-center" id="PurpleBarContainer">
         <h1 className="text-4xl mt-28 md:mt-0 font-extrabold mb-4">CONTACT</h1> 
-        <div className="purple-bar border-black border-1 mt-4position-absolute"></div>
+        <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
         <div className='mx-2'> 
 
             <div className="text-center mt-16">

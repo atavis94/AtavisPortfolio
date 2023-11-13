@@ -16,11 +16,6 @@ export default function About(){
               <h2 className="text-2xl font-semibold md:text-start">A little introduction...</h2>
             </div>
             <div>
-
-
-        
-            
-
               <p className="mb-6">I&apos;m an aspiring software engineer and recent graduate of UniSA. My passion is building web pages with elegant and user friendly user interfaces.
                 I also enjoy the challenge of solving back-end problems that support a rich and engaging front-end.                            
               </p>

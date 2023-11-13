@@ -60,7 +60,7 @@ export default function NavContainer() {
         document.removeEventListener('click', handleClickOutside);
       };
     }, [isMobileMenuOpen]);
-  
+   
   return (
   <>
     <nav className={`${visible || isMobileMenuOpen ? 'opacity-100' : 'opacity-0' }
