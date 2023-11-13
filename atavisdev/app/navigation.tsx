@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import githubIcon from '../resources/github.png';
 import linkedinIcon from '../resources/linkedin128x2.png';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 
 
 
@@ -19,9 +19,9 @@ export default function NavContainer() {
     };
 
   
-    const handleScroll = () => {
+    const handleScroll = useCallback(() => {
       const currentScrollPos = window.scrollY;
-
+    
       // Check if the screen width is less than 768px
       if (window.innerWidth < 768) {
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
@@ -29,17 +29,17 @@ export default function NavContainer() {
         // If the screen width is larger than or equal to 768px, always show the navbar
         setVisible(true);
       }
-
+    
       setPrevScrollPos(currentScrollPos);
-    };
+    }, [prevScrollPos, visible]);
     
     // Handle displaying the navbar on scroll.
     useEffect(() => {
       window.addEventListener('scroll', handleScroll);
-  
+    
       return () => window.removeEventListener('scroll', handleScroll);
-  
-    }, [prevScrollPos, visible, handleScroll]);
+    }, [handleScroll]);
+    
 
     // CLose the mobile menu when the user clicks outside of it.
     useEffect(() => {
@@ -59,7 +59,7 @@ export default function NavContainer() {
       return () => {
         document.removeEventListener('click', handleClickOutside);
       };
-    }, [isMobileMenuOpen]);
+    }, [isMobileMenuOpen, toggleMobileMenu]);
    
   return (
   <>
