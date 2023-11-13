@@ -2,11 +2,11 @@
 import { StaticImageData } from "next/image";
 import Carousel from '../carousel';
 import ProjectContent from "../projectContent";
-import home from '/resources/ceih/home.png';
-import surveyHome from '/resources/ceih/surveyHome.png';
-import surveyBuilder from '/resources/ceih/surveyBuilder.png';
-import addQuestion from '/resources/ceih/addQuestion.png';
-import notifications from '/resources/ceih/notifications.png';
+import home from '/resources/ceih/Home.png';
+import surveyHome from '/resources/ceih/SurveyHome.png';
+import surveyBuilder from '/resources/ceih/SurveyBuilder.png';
+import addQuestion from '/resources/ceih/AddQuestion.png';
+import notifications from '/resources/ceih/Notifications.png';
 
 
 export default function Ceih() {
