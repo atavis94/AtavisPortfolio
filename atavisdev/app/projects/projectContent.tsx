@@ -2,7 +2,7 @@
 // Title, SubTitle, MainDescription, AppliedSkills, LiveAccess
 export default function ProjectContent({content}: {content: [string, string, string[] | string, string[], string[]]}){
     return(
-        <div className="bg-alt border-t border-zinc-950 border-l border-r py-9 md:mx-72 mx-6 rounded-lg text-center" id="PurpleBarContainer">
+        <div className="bg-alt py-9 mt-24 text-center" id="PurpleBarContainer">
             <div className="bg-zinc-950 md:mx-10 mx-9 rounded-lg pb-6">
             <h1 className="text-4xl pt-4 text-center font-extrabold mb-4">{content[0]}</h1>
             <h3 className="mx-4 md:mx-0 font-semibold text-lg pb-4 mb-1">{content[1]}</h3>

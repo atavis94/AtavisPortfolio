@@ -34,8 +34,8 @@ export default function Carousel({imageContent}: {imageContent: [StaticImageData
             >      
             <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={() => setModalIsOpen(false)}/>
         </Modal>
+
         <AutoSlider animation="openAnimation" play={true} interval={5000} style={{ height: '85vh'}}>
-            
             {imageContent.map(([imageData, caption], index) =>(
                 <div key={index} data-src={imageData.src} onClick={() => {openModal(imageData)}}>
                     <p>{caption}</p>   

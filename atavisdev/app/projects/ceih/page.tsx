@@ -35,7 +35,7 @@ export default function Ceih() {
     ]
 
 return ( 
-    <div className="md:mt-18 pb-20 lg:flex-row justify-center shadow-lg">
+    <div className="md:mt-18 pb-20 lg:flex-row justify-center">
         <Carousel imageContent={imageProps} />        
         <ProjectContent content={contentData} />      
     </div>
