@@ -34,12 +34,12 @@ export default function ProjectContent({content}: {content: {title: string, subt
                             {content.liveinfo.map((info, index) => (                        
                                 <p key={index} className="font-semibold text-md mb-4 mx-3">{info}</p>
                             ))}
-                            <Link href={"/"}><button aria-description="Home Button" className="mt-4 mx-2 bg-purple-800 border-black border-2 hover:bg-purple-500 rounded-xl py-1 px-4"><FontAwesomeIcon icon={faHouseChimney} /> Return Home</button></Link>
+                            <Link href={"/"}><button className="mx-2 shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faHouseChimney} /> Return Home</button></Link>
 
                             {content.url ? 
-                                <Link href={content.url}><button aria-description="Home Button" className="mt-4 mx-2 bg-red-800 border-black border-2 hover:bg-red-500 rounded-xl py-1 px-4"><FontAwesomeIcon icon={faTowerBroadcast} /> View Live</button></Link>
+                                <Link href={content.url}><button className="mx-2 shadow bg-red-700 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast} /> View Live</button></Link>
                             :
-                                <button disabled className="mt-4 mx-2 bg-red-800 border-black border-2 hover:bg-red-600 rounded-xl py-1 px-4"><FontAwesomeIcon icon={faTowerBroadcast}/> View Live</button>
+                                <button disabled className="mx-2 shadow bg-red-700 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast}/> View Live</button>
                             }
                         </div>
                         <div>

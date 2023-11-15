@@ -13,7 +13,7 @@ export default function Qualifications(){
             <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
             <div className="flex justify-center items-center mt-16">
                 <a href="/AidanResume.pdf" download>
-                    <button className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
+                    <button className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
                         <span className="flex items-center gap-2">         
                         <FontAwesomeIcon icon={faDownload} className='h-6'/>
                         Download Resume

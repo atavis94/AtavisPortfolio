@@ -33,7 +33,6 @@ export default function Ceih() {
         skills: [".Net Framework", "C#", "JavaScript", "Umbraco CMS", "SQLite", "Bootstrap V5", "CSS", "HTML"],
         liveinfo: [`Unfortunately, the project is a work in progress and the client has not made it available for live access.`,
         `Instead, you may view the gallery of images above. Tip: On mobile devices, hold your device horizontally and tap the fullscreen button in the bottom left of the image.`],
-        url: '/'
     }
 
 return ( 

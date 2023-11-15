@@ -46,7 +46,7 @@ export default function Projects(){
           setModalIsOpen(true)}}/>
         </div>
       </div>
-      <a href="/projects/ceih" className="bg-purple-800 border-black border-2 hover:bg-purple-500 rounded-xl py-1 px-4">View Details</a>
+      <a href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</a>
       
     </div>
   )
