@@ -7,12 +7,12 @@ export default function ProjectManager({
         imageContent, 
         content 
     } : {
-        imageContent: [StaticImageData, string][]; 
+        imageContent: [staticImageData: StaticImageData, description: string][]; 
         content: {title: string, subtitle: string, description: string[] | string, skills: string[], liveinfo: string[], url?: string}
     }) {
 
     return (
-        <div className="mt-18 pb-20 lg:flex-row justify-center">
+        <div className="md:mt-20 mt-18 pb-20 lg:flex-row justify-center">
             <ProjectGallery imageContent={imageContent} />        
             <ProjectContent content={content} />      
         </div>

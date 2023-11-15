@@ -3,12 +3,10 @@ import { faTowerBroadcast } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Link from 'next/link';
 
-
-// Title, SubTitle, MainDescription, AppliedSkills, LiveAccess
 export default function ProjectContent({content}: {content: {title: string, subtitle: string, description: string[] | string, skills: string[], liveinfo: string[], url?: string}}){
 
     return(
-        <div className="bg-alt py-9 mt-20 md:mx-8 mx-3 rounded-lg text-center" id="PurpleBarContainer">
+        <div className="bg-alt py-9 mt-12 md:mx-8 mx-3 rounded-lg text-center" id="PurpleBarContainer">
             <div className="bg-zinc-950 md:mx-10 mx-9 rounded-lg pb-6">
             <h1 className="text-4xl pt-4 text-center font-extrabold mb-4">{content.title}</h1>
             <h3 className="mx-4 md:mx-0 font-semibold text-lg pb-4 mb-1">{content.subtitle}</h3>
