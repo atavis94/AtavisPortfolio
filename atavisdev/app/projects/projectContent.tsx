@@ -37,9 +37,9 @@ export default function ProjectContent({content}: {content: {title: string, subt
                             <Link href={"/#projects"}><button className="mx-2 shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faHouseChimney} /> Return Home</button></Link>
 
                             {content.url ? 
-                                <Link href={content.url}><button className="mx-2 shadow bg-red-700 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast} /> View Live</button></Link>
+                                <Link href={content.url}><button className="mx-2 shadow bg-neutral-950 border-black border hover:bg-neutral-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast} className='text-red-500'/> View Live</button></Link>
                             :
-                                <button disabled className="mx-2 shadow bg-red-700 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast}/> View Live</button>
+                                <button disabled className="mx-2 shadow bg-neutral-200 border-black border hover:bg-neutral-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast} className='text-red-500'/> View Live</button>
                             }
                         </div>
                         <div>
