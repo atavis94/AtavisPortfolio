@@ -2,6 +2,7 @@
 import Image, { StaticImageData } from "next/image";
 import surveyBuilder from '/resources/ceih/SurveyBuilder.png';
 import Modal from 'react-modal';
+import Link  from 'next/link';
 import { useState } from 'react';
 
 
@@ -46,7 +47,7 @@ export default function Projects(){
           setModalIsOpen(true)}}/>
         </div>
       </div>
-      <a href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</a>
+      <Link href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</Link>
       
     </div>
   )

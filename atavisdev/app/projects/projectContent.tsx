@@ -34,7 +34,7 @@ export default function ProjectContent({content}: {content: {title: string, subt
                             {content.liveinfo.map((info, index) => (                        
                                 <p key={index} className="font-semibold text-md mb-4 mx-3">{info}</p>
                             ))}
-                            <Link href={"/"}><button className="mx-2 shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faHouseChimney} /> Return Home</button></Link>
+                            <Link href={"/#projects"}><button className="mx-2 shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faHouseChimney} /> Return Home</button></Link>
 
                             {content.url ? 
                                 <Link href={content.url}><button className="mx-2 shadow bg-red-700 hover:bg-red-600 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"><FontAwesomeIcon icon={faTowerBroadcast} /> View Live</button></Link>
