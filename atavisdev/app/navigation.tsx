@@ -86,10 +86,10 @@ export default function NavContainer() {
           </button>
         </div>
         <div className="hidden visible pt-3 md:px-10 p-4 fixed inset-x-0 right-0 justify-end md:flex md:gap-2 space-x-5">
-          <Link className="underscore text-lg" href="/#about">About</Link>        
-          <Link className="underscore text-lg" href="/#qualifications">Qualifications</Link>
-          <Link className="underscore text-lg" href="/#showcase">Showcase</Link>
-          <Link className="underscore text-lg" href="/#contact">Contact</Link>
+          <Link className="underscore text-md font-bold" href="/#about">ABOUT</Link>        
+          <Link className="underscore text-md font-bold" href="/#qualifications">QUALIFICATIONS</Link>
+          <Link className="underscore text-md font-bold" href="/#projects">PROJECTS</Link>
+          <Link className="underscore text-md font-bold" href="/#contact">CONTACT</Link>
         </div>  
     </nav>
     <nav className={`fixed left-0 h-full w-80 bg-zinc-950 text-white p-4 transform top-[65px] ${
@@ -101,7 +101,7 @@ export default function NavContainer() {
             href="/#about"
             className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            About
+            ABOUT
           </Link>
         </li>
         <li>
@@ -109,15 +109,15 @@ export default function NavContainer() {
             href="/#qualifications"
             className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            Qualifications
+            QUALIFICATIONS
           </Link>
         </li>
         <li>
           <Link
-            href="/#showcase"
+            href="/#projects"
             className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            Showcase
+            PROJECTS
           </Link>
         </li>
         <li>
@@ -125,7 +125,7 @@ export default function NavContainer() {
             href="/#contact"
             className="block text-2xl underscore hover:text-purple-500" onClick={toggleMobileMenu}
           >
-            Contact
+            CONTACT
           </Link>
         </li>
       </ul>

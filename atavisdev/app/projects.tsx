@@ -5,7 +5,7 @@ import Modal from 'react-modal';
 import { useState } from 'react';
 
 
-export default function Showcase(){
+export default function Projects(){
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState(surveyBuilder);
@@ -22,7 +22,7 @@ export default function Showcase(){
           <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={() => setModalIsOpen(false)}/>
       </Modal>
   
-      <h1 className="text-4xl font-extrabold mb-4">SHOWCASE</h1>
+      <h1 className="text-4xl font-extrabold mb-4">PROJECT SHOWCASE</h1>
       <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
       <div className="flex flex-col sm:flex-row mt-20 items-center md:items-start justify-center">
         <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">

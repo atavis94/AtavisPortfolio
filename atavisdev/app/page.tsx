@@ -2,7 +2,7 @@ import ContactForm from "./contactForm";
 import About from "./about";
 import Qualifications from "./qualifications";
 import Banner from "./banner";
-import Showcase from "./showcase";
+import Projects from "./projects";
 
 
 export default function Home() {
@@ -15,8 +15,8 @@ export default function Home() {
       <section id="qualifications">
         <Qualifications />
       </section>
-      <section id="showcase">
-        <Showcase />
+      <section id="projects">
+        <Projects />
       </section>
       <section id="contact">
         <ContactForm />
