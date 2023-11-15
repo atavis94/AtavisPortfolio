@@ -13,7 +13,7 @@ export default function ProjectGallery({imageContent}: {imageContent: [staticIma
 
     return (
       <div className="flex justify-center items-center mt-16 rounded-lg">
-        <ImageGallery items={formattedImageContent} slideDuration={6000} showPlayButton={false} autoPlay={true} showNav={true} showBullets={false} showThumbnails={true} showFullscreenButton={true} />   
+        <ImageGallery items={formattedImageContent} slideDuration={1000} showPlayButton={false} autoPlay={false} showNav={true} showBullets={false} showThumbnails={true} showFullscreenButton={true} />   
       </div>
 
 )}        
