@@ -7,7 +7,7 @@ export default function ProjectGallery({imageContent}: {imageContent: [staticIma
     const formattedImageContent = imageContent.map(([image, description]) => ({
         original: image.src,
         thumbnail: image.src,
-        description: description,
+        description: description, 
     }));
 
 
