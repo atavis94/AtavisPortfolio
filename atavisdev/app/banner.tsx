@@ -8,7 +8,7 @@ export default function Banner(){
             HI, I&apos;M AIDEN. SOFTWARE ENGINEER.
           </h1>
           <p className="text-center subpixel-antialiased text-white text-lg font-bold mt-5 mx-5 my-10">
-            I'm a software developer who is passionate about all things programming.
+            I&apos;m a software developer who is passionate about all things programming.
           </p>
 
           <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
