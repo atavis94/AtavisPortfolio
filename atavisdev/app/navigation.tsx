@@ -97,10 +97,10 @@ export default function NavContainer() {
         </div>  
     </nav>
 
-    <nav className={`fixed left-0 h-full w-80 bg-zinc-950 text-white p-4 transform top-[65px] ${
+    <nav className={`fixed left-0 h-full w-80 bg-background p-4 transform top-[65px] ${
             isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-          } transition-transform duration-300 ease-in-out z-50 `} ref={mobileMenuRef}>
-      <ul className="space-y-4">
+          } transition-transform duration-300 ease-in-out z-20 `} ref={mobileMenuRef}>
+      <ul className="space-y-4 py-6">
         <li>
           <Link
             href="/#about"
