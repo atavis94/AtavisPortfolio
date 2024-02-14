@@ -48,13 +48,11 @@ export default function ContactForm() {
 
     return (
 
-        <div className="text-center lg:py-28 lg:flex-row justify-center" id="PurpleBarContainer">
-        <h1 className="text-4xl mt-28 md:mt-0 font-extrabold mb-4">CONTACT</h1> 
-        <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
+        <div className="text-center bg-backgroundalt lg:py-24 lg:flex-row justify-center">
+          <h1 className="text-4xl font-extrabold mb-4">CONTACT</h1>
         <div className='mx-2'> 
-
             <div className="text-center mt-16">
-                <h2 className="text-3xl text-white">Looking to get in touch?</h2>
+                <h1 className="text-3xl">Looking to get in touch?</h1>
             </div>
             <div className="flex justify-center items-center mt-6 pt-8">
                 <form
@@ -64,11 +62,11 @@ export default function ContactForm() {
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                         <label
-                        className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                        className="block uppercase tracking-wide text-xs font-bold mb-2">
                         Name
                         </label>
                         <input
-                        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                        className="appearance-none bg-white block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-blue-100 focus:border-gray-500"
                         id="grid-first-name"
                         type="text"
                         placeholder="John Doe"
@@ -80,11 +78,11 @@ export default function ContactForm() {
                     </div>
                     <div className="w-full md:w-1/2 px-3">
                         <label
-                        className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
-                        Email
+                        className="block uppercase tracking-wide text-xs font-bold mb-2">
+                        Your Email
                         </label>
                         <input
-                        className="appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                        className="appearance-none bg-white block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-blue-100 focus:border-gray-500"
                         id="grid-last-name"
                         type="email"
                         placeholder="john.doe@gmail.com"
@@ -99,11 +97,11 @@ export default function ContactForm() {
                 <div className="flex flex-wrap -mx-3 mb-6">
                     <div className="w-full px-3">
                         <label
-                        className="block uppercase tracking-wide text-white text-xs font-bold mb-2">
+                        className="block uppercase tracking-wide text-xs font-bold mb-2">
                         Message
                         </label>
                         <textarea
-                        className="no-resize appearance-none block w-full bg-white text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
+                        className="no-resize bg-white appearance-none block w-full text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-blue-100 focus:border-gray-500 h-48 resize-none"
                         id="message"
                         name="message"
                         placeholder="Enter your message here..."
@@ -117,7 +115,7 @@ export default function ContactForm() {
                 <div className="md:flex md:items-center">
                     <div className="md:w-full justify-center items-center">
                         <button
-                        className="shadow bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                        className="shadow bg-purple-500 hover:bg-purple-400 text-white focus:shadow-outline focus:outline-none font-bold py-2 px-4 rounded"
                         type="submit"
                         disabled={isSubmitting}>
                         Send

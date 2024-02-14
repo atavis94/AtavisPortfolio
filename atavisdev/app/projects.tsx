@@ -12,7 +12,7 @@ export default function Projects(){
   const [selectedImage, setSelectedImage] = useState(surveyBuilder);
 
   return(
-      <div className="bg-zinc-950 text-white py-28 text-center" id="PurpleBarContainer">   
+      <div className="bg-background py-28 text-center" id="PurpleBarContainer">   
       <Modal
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}

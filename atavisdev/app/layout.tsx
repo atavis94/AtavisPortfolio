@@ -9,6 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 const sourceSans = Source_Sans_3({ subsets: ['latin'] })
 const notoSans = Noto_Sans_Display({ subsets: ['latin'] })
 
+import { ThemeProvider } from './theme-provider';
+
 export const metadata = {
   title: 'Atavis Development',
   description: 'Atavis is a software developer based in Adelaide, South Australia.',
@@ -23,12 +25,20 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en">
-    <body className={`${notoSans.className} body-svg-wires-light w-full text-white`}>
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${notoSans.className} bg-background w-full`}>
 
-        <NavContainer />
-        {children}
-        <Footer />
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="light"
+            enableSystem
+            disableTransitionOnChange
+          >
+          <NavContainer />
+            {children}
+          <Footer />
+        </ThemeProvider>
+
       </body>
     </html>
   );

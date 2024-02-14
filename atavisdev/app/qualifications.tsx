@@ -8,9 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 export default function Qualifications(){
     return(
 
-        <div className="bg-zinc-950 bg-alt md:py-28 py-20 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
-            <h1 className="text-4xl text-center font-extrabold mb-4">QUALIFICATIONS</h1>
-            <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
+        <div className="bg-background md:py-24 py-20 lg:flex-row justify-center shadow-lg" id="PurpleBarContainer">
             <div className="flex justify-center items-center mt-16">
                 <a href="/AidanResume.pdf" download>
                     <button className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">
@@ -45,32 +43,7 @@ export default function Qualifications(){
                 </div>
             </div>
 
-            <div className="flex justify-center items-center mt-4 mb-10">
-            <hr className="w-3/4 md:w-2/3  text-center border border-zinc-700" />
-            </div>
 
-
-            <div className="flex flex-col sm:flex-row mt-18 items-center md:items-start justify-center mb-18 md:mb-0">
-                <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">
-                    <div>
-                    <Image src={flindersLogo} style={{ objectFit: "contain" }} width={300} alt="UniSA STEM Logo" className="mb-8 lg:order-0 lg:mx-10 sm:mx-20" />
-
-                    </div>
-                </div>         
-                <div className="md:w-1/4 w-3/4 p-4 mx-10 flex flex-col">
-                    <div className="mb-4">
-                    <h2 className="text-2xl font-semibold sm:text-center mb-4">Associate of Arts</h2>
-                    </div>
-                    <div className="flex flex-wrap max-w-lg">
-                    <h2>Areas of Study:</h2>
-                    <ul className="list-disc list-inside mt-4">
-                        <li>Business & Management</li>
-                        <li>Psychology</li>
-                        <li>Assorted interest courses in political science and bioscience.</li>
-                    </ul>
-                    </div>
-                </div>
-            </div>
       </div>
     )
 }
