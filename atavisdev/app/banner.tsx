@@ -12,7 +12,7 @@ export default function Banner(){
           </h1>
           <div className=" mt-6 z-50 text-center">
           <p className="subpixel-antialiased text-lg font-bold mx-5 mb-8 ml-18 max-w-[50rem] md:mx-auto md:text-center">
-              I&apos;m a full-stack web developer based in South Australia. I'm always interested in freelance work and employment opportunities! <br /> <br />Don&apos;t hesitate to drop me a line on LinkedIn or via the contact form.
+              I&apos;m a full-stack web developer based in South Australia. I&apos;m always interested in freelance work and employment opportunities! <br /> <br />Don&apos;t hesitate to drop me a line on LinkedIn or via the contact form.
           </p>
 
             <div className="flex justify-center items-center md:items-start mt-4 mb-10">
