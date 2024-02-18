@@ -67,7 +67,7 @@ export default function Projects(){
               <Skeleton className="h-4 w-[85%] mb-2" />
             </div>
             <div className="my-2 py-3 align-bottom">
-            <button disabled className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Coming Soon</button>
+            <Link href={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"} className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Coming Soon</Link>
             </div>
           </div>    
       </div>
