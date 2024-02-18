@@ -48,11 +48,10 @@ export default function ContactForm() {
 
     return (
 
-        <div className="text-center bg-backgroundalt lg:py-24 lg:flex-row justify-center">
-          <h1 className="text-4xl font-extrabold mb-4">CONTACT</h1>
+        <div className="text-center bg-backgroundalt py-28 lg:flex-row justify-center">
         <div className='mx-2'> 
-            <div className="text-center mt-16">
-                <h1 className="text-3xl">Looking to get in touch?</h1>
+            <div className="text-center ">
+              <h1 className="text-4xl font-extrabold pb-14">Want to get in touch?</h1> 
             </div>
             <div className="flex justify-center items-center mt-6 pt-8">
                 <form

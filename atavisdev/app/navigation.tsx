@@ -68,7 +68,7 @@ export default function NavContainer() {
     <nav className={`${visible || isMobileMenuOpen ? 'opacity-100' : 'opacity-0' }
        pb-5 pt-2 px-8 fixed top-0 inset-x-0 justify-start shadow-md
         flex gap-2 bg-nav z-50`}>
-        <div className="pt-1.5 mr-4" style={{ position: 'relative', zIndex: 10 }}>
+        <div className="pt-1.5" style={{ position: 'relative', zIndex: 10 }}>
           <ModeToggle />
         </div>
         {/* <div className="pt-2" style={{ position: 'relative', zIndex: 10 }}>
@@ -81,7 +81,7 @@ export default function NavContainer() {
               <GitHubLogoIcon className='h-[2rem] w-[2rem] hover:scale-110 transition-transform duration-250 ease-in-out'/>
           </Link>
         </div> */}
-        <h2 className='pt-2.5'>Toggle Darkmode</h2>
+        <h2 className='pt-3 font-semibold text-sm subpixel-antialiased'>Theme</h2>
         <div className="md:hidden fixed inset-x-0 right-5 justify-end flex items-center">
           <button className="navbar-burger flex items-center text-zinc-300 p-3" onClick={toggleMobileMenu}>
             <svg className="block h-5 w-5 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

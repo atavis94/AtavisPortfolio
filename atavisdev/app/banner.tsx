@@ -12,11 +12,11 @@ export default function Banner(){
           </h1>
           <div className=" mt-6 z-50 text-center">
           <p className="subpixel-antialiased text-lg font-bold mx-5 mb-8 ml-18 max-w-[50rem] md:mx-auto md:text-center">
-                          I&apos;m a primarily front-end focused web developer based in Adelaide. I'm always interested in freelance work and employment opportunities! <br /> <br />Don&apos;t hesitate to drop me a line on LinkedIn or via the contact form.
-            </p>
+              I&apos;m a full-stack web developer based in South Australia. I'm always interested in freelance work and employment opportunities! <br /> <br />Don&apos;t hesitate to drop me a line on LinkedIn or via the contact form.
+          </p>
 
             <div className="flex justify-center items-center md:items-start mt-4 mb-10">
-              <hr className="w-5/6 md:w-1/2 text-start border-purple-900" />
+              <hr className="w-[90vw] md:max-w-[65rem] text-start border-purple-900" />
             </div>
             <div className="flex gap-4  justify-center mb-36">
                 <Link href="#contact" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded ml-2">

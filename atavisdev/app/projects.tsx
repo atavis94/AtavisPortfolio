@@ -4,6 +4,7 @@ import surveyBuilder from '/resources/ceih/SurveyBuilder.png';
 import Modal from 'react-modal';
 import Link  from 'next/link';
 import { useState } from 'react';
+import { Skeleton } from "@/components/ui/skeleton";
 
 
 export default function Projects(){
@@ -12,7 +13,7 @@ export default function Projects(){
   const [selectedImage, setSelectedImage] = useState(surveyBuilder);
 
   return(
-      <div className="bg-background py-28 text-center" id="PurpleBarContainer">   
+      <div className="bg-background py-28 text-center">   
       <Modal
             isOpen={modalIsOpen}
             onRequestClose={() => setModalIsOpen(false)}
@@ -23,32 +24,53 @@ export default function Projects(){
           <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)" onClick={() => setModalIsOpen(false)}/>
       </Modal>
   
-      <h1 className="text-4xl font-extrabold mb-4">PROJECT SHOWCASE</h1>
-      <div className="purple-bar border-black border-1 mt-4 position-absolute"></div>
-      <div className="flex flex-col sm:flex-row mt-20 items-center md:items-start justify-center">
-        <div className="md:w-1/4 w-3/4 p-4 md:text-start text-center flex flex-col justify-start">
-          <div className="mb-4">
-            <h2 className="text-2xl font-semibold md:text-start">CEIH Heart Failure Survey System</h2>
-          </div>
-          <div>
-            <p className="mb-6">
-              Initiated by the Commission on Exellence and Innovation in  Health&apos;s Heart Failure Subcommitte, this project served as my capstone project as part of my software development degree.                         
-            </p>
-            <p className='mb-6'>
-              The project required constructing a survey system akin to survey monkey which would allow CEIH committe members to build custom surveys to gain specific data from
-              key stakeholders, including clinicians and patients. Additionally, the existing website was rebuilt to improve user friendliness and to allow for the survey system to be integrated.          
-            </p>
+      <h1 className="text-4xl font-extrabold mb-12">My projects! See anything you like?</h1>
 
-          </div>
+      <div className="flex flex-col md:flex-row justify-center mx-auto">
+        <div className="max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-3/4 md:w-1/2 ">
+            <div className="max-h-xl flex justify-center mb-6 ">
+                <Image src={selectedImage}  className="object-cover rounded-md" alt="Enlarged Version of Selected Image (Varies)" onClick={() => { 
+                  setSelectedImage(surveyBuilder);
+                  setModalIsOpen(true)}}/>
+              </div>
+            <h2 className="text-lg font-extrabold py-3 text-center mb-1">CEIH Heart Failure Survey System</h2>
+            <div className="px-6">
+            <p className="mb-5">
+                Initiated by the Commission on Exellence and Innovation in  Health&apos;s Heart Failure Subcommitte, this project served as my capstone project of my software development degree.                         
+              </p>
+              <p className='mb-2'>
+                The project required constructing a survey system akin to survey monkey which would allow committe members to build custom surveys to gain specific data from
+                key stakeholders, including clinicians and patients. Additionally, the existing website was rebuilt to improve user friendliness and to allow for the survey system to be integrated.          
+              </p>
+              
+            </div>
+            <div className="my-2 py-4 self-end place-self-end">
+              <Link href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</Link>
+            </div>
         </div>
-        <div className="md:w-1/4 w-3/4 p-4 mx-10 flex flex-col">
-        <Image src={surveyBuilder} alt="UniSA STEM Logo" className="mb-20 lg:order-0 lg:mx-10 sm:mx-20" onClick={() => { 
-          setSelectedImage(surveyBuilder);
-          setModalIsOpen(true)}}/>
-        </div>
+
+          <div className="max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-3/4 md:w-1/2">
+            <div className="w-full max-h-xl flex justify-center mb-6 py-2">
+                <Skeleton className="h-[300px] w-[95%] mb-6 my-2 mx-4" />
+            </div>
+            <h2 className="text-lg font-extrabold py-3 text-center mb-1">Coming Soon...</h2>
+            <div className="px-6">
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-[90%] mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-[85%] mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />  
+              <Skeleton className="h-4 w-[90%] mb-2" />
+              <Skeleton className="h-4 w-full mb-2" />
+              <Skeleton className="h-4 w-[85%] mb-2" />
+            </div>
+            <div className="my-2 py-3 align-bottom">
+            <button disabled className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">Coming Soon</button>
+            </div>
+          </div>    
       </div>
-      <Link href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</Link>
-      
     </div>
   )
 }

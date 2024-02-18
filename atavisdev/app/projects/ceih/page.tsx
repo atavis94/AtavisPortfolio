@@ -23,16 +23,15 @@ export default function Ceih() {
         subtitle: "Commission on Excellence and Innovation in Health - Survey Builder",
         description: [`The Commission on Exellence and Innovation in Health's Heart Failure Subcommitte initiated a student project to build a web portal
         that would serve as their public interface and also allow CEIH staff to interact with patients and other stakeholders.`,
-        `The initiative had been underway for over a year, with the previous team incorporating Umbraco's content management system and relying on the .NET Framework.`,
+        `The initiative had been underway for over a year, with the previous team opting to build the project using ASP.NET, with the addition of Umbraco's CMS.`,
         `My primary involvement revolved around building and implementing a survey system into the website, permitting CEIH staff to construct tailored surveys to gather insights 
             from crucial stakeholders, including clinicians and patients.`,
         `The existing site required a complete rebuild as the codebase was undocumented, messy, and difficult to work with. I saw this as a necessity to 
         ensure the future success of the project given that it is an ongoing student project. 
          Remaining faithful to the original design, the site was rebuilt using technology and frameworks familiar to UniSA's software engineering students to ensure that future students would have no trouble working with the codebase.`,
         `The end product was a success and the client was very pleased with the result.`],
-        skills: [".Net Framework", "C#", "JavaScript", "Umbraco CMS", "SQLite", "Bootstrap V5", "CSS", "HTML"],
-        liveinfo: [`Unfortunately, the project is a work in progress and the client has not made it available for live access.`,
-        `Instead, you may view the gallery of images above. Tip: On mobile devices, hold your device horizontally and tap the fullscreen button in the bottom left of the image.`],
+        skills: ["ASP.Net", "C#", "JavaScript", "Umbraco CMS", "SQLite", "Bootstrap V5", "CSS", "HTML"],
+        liveinfo: [`The project is an ongoing student project and the client has not made it available for live access.`],
     }
 
 return ( 
