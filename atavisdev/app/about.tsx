@@ -10,7 +10,7 @@ export default function About(){
 
       <div className="bg-backgroundalt py-20 text-center">       
         <h1 className="text-4xl font-extrabold mb-12">A little introduction...</h1> 
-            <div className="mx-auto max-w-lg md:max-w-3xl text-start">
+            <div className="mx-6 md:mx-auto max-w-lg md:max-w-3xl text-start">
               <p className="mb-6">Hey! I&apos;m Aidan and I&apos;m a software engineer. My journey into programming all started with a single class that ignited a spark
               of sorts. Ever since then I&apos;ve been hooked on problem-solving and the creative process behind building digital experiences.                          
               </p>

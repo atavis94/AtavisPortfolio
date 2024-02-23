@@ -27,7 +27,7 @@ export default function Projects(){
       <h1 className="text-4xl font-extrabold mb-12">My projects! See anything you like?</h1>
 
       <div className="flex flex-col md:flex-row justify-center mx-auto">
-        <div className="max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-3/4 md:w-1/2 ">
+        <div className="md:max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-[90%] md:w-1/2 ">
             <div className="max-h-xl flex justify-center mb-6 ">
                 <Image src={selectedImage}  className="object-cover rounded-md" alt="Enlarged Version of Selected Image (Varies)" onClick={() => { 
                   setSelectedImage(surveyBuilder);
@@ -49,7 +49,7 @@ export default function Projects(){
             </div>
         </div>
 
-          <div className="max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-3/4 md:w-1/2">
+          <div className="max-w-lg mt-10 bg-backgroundalt border rounded-lg shadow-md flex-grow mb-8 mx-auto md:mx-4 w-[90%] md:w-1/2">
             <div className="w-full max-h-xl flex justify-center mb-6 py-2">
                 <Skeleton className="h-[300px] w-[95%] mb-6 my-2 mx-4" />
             </div>

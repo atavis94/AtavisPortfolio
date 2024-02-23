@@ -53,7 +53,7 @@ export default function ContactForm() {
             <div className="text-center ">
               <h1 className="text-4xl font-extrabold pb-14">Want to get in touch?</h1> 
             </div>
-            <div className="flex justify-center items-center mt-6 pt-8">
+            <div className="flex justify-center items-center mt-6 pt-8 mx-4 ">
                 <form
                 className=" max-w-lg md:mb-10 mb-28"
                 onSubmit={handleSubmit}

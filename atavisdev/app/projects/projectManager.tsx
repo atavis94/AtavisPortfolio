@@ -35,17 +35,17 @@ export default function ProjectManager({
       
     return (
         <>
-              <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={() => setModalIsOpen(false)}
-            contentLabel="Full-size Image Modal"
-            className="Modal"
-            overlayClassName="Overlay"
-            >         
-          <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)"  onClick={() => setModalIsOpen(false)}/>
-      </Modal>
+            <Modal
+                isOpen={modalIsOpen}
+                onRequestClose={() => setModalIsOpen(false)}
+                contentLabel="Full-size Image Modal"
+                className="Modal"
+                overlayClassName="Overlay"
+                >         
+                <Image src={selectedImage} alt="Enlarged Version of Selected Image (Varies)"  onClick={() => setModalIsOpen(false)}/>
+            </Modal>
         
-        <div className="md:mt-20 mt-18 pb-20 lg:flex-row justify-center text-center">
+        <div className="md:mt-20 mt-28 pb-20 lg:flex-row justify-center text-center">
             <div className="bg-background">
                 <h1 className="text-4xl pt-4 font-extrabold mb-4">{content.title}</h1>
                 <h3 className="mx-4 md:mx-0 font-semibold text-lg pb-4 mb-1">{content.subtitle}</h3>
