@@ -58,6 +58,7 @@ export default function About(){
                       <h3 className="text-sm">Chancellor&apos;s Letter of Commendation 2020 (Top 5%)</h3>
                       <h3 className="text-sm">Merit Award for Outstanding Performance 2021</h3>
                       <h3 className="text-sm">Merit Award for Outstanding Performance 2022</h3>
+                      <h3 className="text-sm">Merit Award for Outstanding Performance 2023</h3>
                       <h3 className="text-sm">Golden Key International Honour Society Member</h3> 
                     </div>
                   </div>
