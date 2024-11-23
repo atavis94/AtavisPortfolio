@@ -45,8 +45,8 @@ export default function Projects(){
               </p>
               
             </div>
-            <div className="my-2 py-4 self-end place-self-end">
-              <Link href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</Link>
+            <div className="my-2 py-4 flex justify-center w-full">
+                <Link href="/projects/ceih" className="shadow bg-purple-700 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded">View Details</Link>
             </div>
         </div>
 
